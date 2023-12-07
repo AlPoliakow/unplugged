@@ -83,7 +83,199 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /*--BASE HEADER AND FOOTER STYLES--*/
+.content-wrapper {
+  /*child of header, aside, reviews, features, hero area, faq, contact section, mission,footer*/
+  width:90%;
+}
+  /*header styles*/
+  header{
+    /* parent to .content-wrapper*/
+    display:flex;
+    justify-content: center; 
+  }
 
+  header .content-wrapper {
+    /*child of header*/
+    /*parent to header divider and nav*/
+    display:flex;
+    justify-content:center;
+    align-items: center; 
+    flex-flow: row wrap;
+  }
+
+  .header-divider {
+  }
+
+  header nav {
+  }
+
+  header nav ul{
+    /*parent to nav ul li*/
+    display:flex;
+    justify-content: space-around;
+  }
+
+  header nav ul li{
+    /*child of nav ul*/
+    list-style:none;
+  }
+
+  /*footer*/
+footer {
+  /* parent to footer content-wrapper */
+  display:flex;
+  flex-direction; column;
+  align-items:center;
+  text-align: center;
+  }
+  
+  
+  .contact {
+  }
+  
+  .social{
+
+  }
+  
+  footer .social-icons{
+    /*child of .social*/
+    /*parent of .social-icons p */
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+  }
+  
+  footer .social-icons p{
+    /*child of .social-icons*/
+    /* parent to a href=icon*/
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  
+  .copyright{ 
+  }
+
+  /*-------------------Mobile styles homepage--------------*/
+  /*-------HERO AREA---------*/
+  .hero-area {
+    display:flex;
+    justify-content: center;
+  }
+
+  .hero-area .content-wrapper {
+    display:flex;
+    justify-content: center;
+  }
+  
+  /*---------ASIDE------*/
+  aside {
+    display:flex;
+    justify-content: center;
+  }
+
+ /* .aside .content-wrapper {
+    child of aside 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .form-description{
+    display:flex;
+    justify-content: center;
+  }
+
+  .form-description h3, 
+  p{
+    display: flex;
+  }
+
+  .form{
+    display: flex;
+    justify-content: center;
+  }*/
+
+/*----------FEATURES--------*/
+  .features{
+    display:flex;
+    justify-content: center;
+  }
+
+  /*.features .content-wrapper {
+    /child of .features 
+    parent to features-items
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    align-items: center;
+    flex-direction: column; 
+  }*/
+  
+
+  .features .features-items{
+    /* child of .features .content-wrapper */
+    /*parent to .features article */
+    display: flex;
+    justify-content:center;
+    align-items: flex-start; /*to align items from the top for tablet and desktop - won't affect mobile site */
+    flex-flow: row wrap;
+  }
+
+  /*
+  .features article {
+    parent to features-item description and features-icon
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .features-icon{
+    child of .features article
+    display: flex;
+  }
+
+  .features-item-description{
+    /*child of .features article
+    display: flex;
+  }
+*/
+
+/*----------REVIEWS----------------*/
+.reviews{
+  display:flex;
+  justify-content: center;
+}
+
+}
+
+/*---ABOUT PAGE---*/
+
+.mission{
+  display:flex;
+    justify-content: center;
+}
+
+.contact-section {
+  display:flex;
+  justify-content: center;
+}
+
+/*-------FAQ page---*/
+.faq{
+  display:flex;
+  justify-content: center;
+}
+
+.faq .content-wrapper {
+  /*child of faq*/
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
