@@ -155,12 +155,17 @@ footer .contact {
 
 footer .social-icons {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-footer .copyright p {
+footer .copyright {
   margin: 20px 0;
 }
 
@@ -340,9 +345,114 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+    outline: 3px dotted red;
+  }
+
+  header {
+    padding: 33px o;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+    }
+
+  header nav {
+    display: flex;
+    width:20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider{
+    display: none;
+  }
+
+  .hero-area h1{
+    width: 82%;
+    margin: 0;
+  }
+
+  aside .content-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+ 
 }
+
+  aside .content-wrapper .form-description {
+  width:40%;
+  margin: 0;
+}
+
+  aside .content-wrapper .form {
+  width:40%;
+  margin: 0;
+}
+
+.features .content-wrapper {
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.features article {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 50%;
+}
+
+.features .features-item-description {
+  width: 50%;
+}
+
+.reviews h2{
+  padding:0;
+}
+
+.reviews article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews article div{
+  width: 49%;
+}
+
+
+footer .content-wrapper {
+  width: 65%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .contact {
+  margin-bottom: 0;
+}
+
+footer .copyright{
+  width:100%;
+}
+}
+  
+@media only screen and (min-width: 1200px) {
+  .content-wrapper {
+  max-width: 960px;
+  }
+}
+
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
