@@ -102,7 +102,6 @@ textarea {
 }
 
 /*--BASE HEADER AND FOOTER STYLES--*/
-/*header styles*/
 header {
   display: flex;
   justify-content: center;
@@ -133,7 +132,6 @@ header nav ul {
   width: 100%;
 }
 
-/*footer*/
 footer {
   display: flex;
   flex-direction: column;
@@ -346,12 +344,14 @@ aside {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
+  /*--GENERAL STYLES TABLET--*/
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
     outline: 3px dotted red;
   }
 
+   /*--HEADER TABLET--*/
   header {
     padding: 33px o;
   }
@@ -362,7 +362,6 @@ aside {
     }
 
   header nav {
-    display: flex;
     width:20%;
   }
 
@@ -374,17 +373,15 @@ aside {
     display: none;
   }
 
-  .hero-area h1{
-    width: 82%;
-    margin: 0;
-  }
+   /*--HERO-AREA TABLET--*/
+  
+   /*--ASIDE TABLET--*/
 
   aside .content-wrapper {
   margin: 50px 0;
   display: flex;
   justify-content: space-between;
   align-content: flex-start;
- 
 }
 
   aside .content-wrapper .form-description {
@@ -403,6 +400,7 @@ aside {
   flex-direction: column;
 }
 
+/*--FEATURES TABLET--*/
 .features article {
   display: flex;
   align-items: center;
@@ -414,10 +412,7 @@ aside {
   width: 50%;
 }
 
-.reviews h2{
-  padding:0;
-}
-
+/*--REVIEWS TABLET--*/
 .reviews article {
   display: flex;
   justify-content: space-between;
@@ -427,7 +422,7 @@ aside {
   width: 49%;
 }
 
-
+/*--FOOTER TABLET--*/
 footer .content-wrapper {
   width: 65%;
 }
@@ -444,6 +439,50 @@ footer .contact {
 
 footer .copyright{
   width:100%;
+}
+
+/*-===========================================================
+ABOUT PAGE TABLET
+============================================================-*/
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.mission-content p{
+  width:45%;
+}
+
+.map {
+  height: 350px;
+  width:100%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/*-===========================================================
+FAQ PAGE TABLET
+============================================================-*/
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq h2 {
+  width:100%;
+}
+
+.faq-content {
+  flex-basis: 45%;
 }
 }
   
