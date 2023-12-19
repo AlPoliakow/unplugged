@@ -96,6 +96,84 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /*----------------------GENERAL STYLES---------------------------*/
+   html{
+    font-size: 16px;
+   }
+
+   body (
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+   )
+
+   ul, ol {
+
+   }
+
+   a{
+    color: #e2e3ed;
+    text-decoration: none;
+    }
+
+    h1{
+      font-size:2.25em;
+      line-height: 2.6875em;
+      font-weight: 500;
+    }
+    
+
+   h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875em;
+    font-weight: 500;
+   }
+
+  .reviews h2,
+  .faq h2 {
+    line-height: 1.875em;
+  }
+
+
+   h3,
+   h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;
+    font-weight:500;
+   }
+
+   
+
+   p {
+    font-size: 0.875em;
+    line-height: 1.125em;
+  }
+
+   /*--img {}--*/
+
+   nav {
+    font-size: 1.125em;
+    font-weight: bold;
+   }
+
+   input text {
+    font-size: 1.125em;
+    font-weight: 500;
+   }
+
+   .features-icon p{
+    font-size: 3.75em;
+   }
+
+   .social-icons p{
+    font-size: 1.3125;
+   }
+
+   address {
+    font-style: normal;
+   }
+
+  
+  
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -168,11 +246,14 @@ footer .copyright {
 }
 
 /*-------------------Mobile styles homepage--------------*/
+/*--General styles--*/
+
 /*-------HERO AREA---------*/
 .hero-area {
   display: flex;
   justify-content: center;
 }
+
 
 
 /*---------ASIDE------*/
@@ -259,6 +340,10 @@ aside {
 .faq-content {
   margin-bottom: 50px;
 }
+
+.faq-content h4{
+  line-height: 1.5em;
+ }
 
 /* ==========================================================================
    Helper classes
@@ -351,6 +436,26 @@ aside {
     margin: 100px 0;
   }
 
+  h1{
+    font-size:3em;
+    line-height: 3em;
+  }
+
+  h2{
+    line-height: 3em;
+    font-size: 2.25em
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 3em; 
+  }
+
+.contact-content h4,
+footer h4 {
+    font-size: 1.5em;
+  }
+
   /*--HEADER TABLET--*/
   header {
     padding: 33px o;
@@ -423,7 +528,9 @@ aside {
     justify-content: space-between;
     align-items: center;
   }
-
+ footer p{
+  line-height: 1.125em;
+ }
   footer .contact {
     margin-bottom: 0;
   }
@@ -470,6 +577,12 @@ FAQ PAGE TABLET
   .faq-content {
     flex-basis: 45%;
   }
+
+  .faq h4,
+  .faq p {
+    font-size: 0.875em;
+    line-height: 0.9844em
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -481,6 +594,34 @@ FAQ PAGE TABLET
     padding: 15px 0;
   }
 
+  h1{
+    font-size: 3.75em;
+  }
+
+  h2{
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4{
+    font-size: 1.875em;
+  }
+
+  p{
+    line-height: 1.5em;
+    font-size: 1.125em;
+  }
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1.125em;
+  }
+
+
+  .faq h2,
+  .mission h2 {
+    font-size: 3em;
+  }
   /*=============================================================================================
 HOMEPAGE DESKTOP
 ================================================================================================*/
