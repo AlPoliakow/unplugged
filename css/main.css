@@ -118,6 +118,13 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  margin: 0;
+  font-size: 2.25em;
+  line-height: 2.6875em;
+  font-weight: 500;
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
@@ -251,12 +258,7 @@ footer .copyright {
   height: 500px;
 }
 
-.hero-area h1 {
-  margin: 0;
-  font-size: 2.25em;
-  line-height: 2.6875em;
-  font-weight: 500;
-}
+
 
 /*---Aside Mobile---*/
 aside {
@@ -269,25 +271,31 @@ aside h3 {
   margin-left: 0;
 }
 
-input text {
-  font-size: 1.125em;
-  font-weight: 500;
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
   color: #2a423a;
+  font-style: italic;
+  padding: 1em;
 }
 
-button {
-  color: #2a423a;
-}
-
-
-/*aside .content-wrapper .form text {
-  padding:1em;
-  margin-bottom: 20px;
-}
-
-aside .content-wrapper .form button {
+input[type=button] {
+  width: 100%;
   padding: 20px 0;
-}*/
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /*---Features Mobile---*/
 .features {
@@ -479,31 +487,7 @@ aside .content-wrapper .form button {
    ========================================================================== */
 
 
-aside .form {
-  margin-top: 30px;
-}
 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
 
 @media only screen and (min-width: 768px) {
 
@@ -558,7 +542,7 @@ input[type=button] {
 
   h1 {
     font-size: 3em;
-    line-height: 3em;
+    line-height: 1em;
   }
 
   /*--ASIDE TABLET--*/
@@ -578,6 +562,32 @@ input[type=button] {
 
   aside h3 {
     line-height: 1em;
+  }
+
+  aside .form {
+    margin-top: 30px;
+  }
+
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
   }
 
 
@@ -661,6 +671,10 @@ ABOUT PAGE TABLET
     margin: 0;
   }
 
+  .map { 
+    height: 350px;
+  }
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -702,33 +716,6 @@ FAQ PAGE TABLET
   .faq p {
     font-size: 0.875em;
     line-height: 0.9844em;
-  }
-
-
-  aside .form {
-    margin-top: 30px;
-  }
-
-  input[type=text] {
-    box-sizing: border-box;
-    width: 100%;
-    color: #2a423a;
-    font-style: italic;
-    padding: 1em;
-  }
-
-  input[type=button] {
-    width: 100%;
-    padding: 20px 0;
-    margin-top: 20px;
-    background-color: #2a423a;
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 1.125em;
-    color: #e2e3ed;
-    border: none;
-    text-align: center;
-    text-transform: uppercase;
   }
 }
 
@@ -822,6 +809,10 @@ ABOUT PAGE DESKTOP
   .contact-section .content-wrapper h2 {
     width: 95%;
     font-size: 3em;
+  }
+
+  .map {
+    height: 450px;
   }
 
   /*===============================================================================
