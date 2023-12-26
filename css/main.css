@@ -121,7 +121,6 @@ a {
 h1 {
   margin: 0;
   font-size: 2.25em;
-  line-height: 2.6875em;
   font-weight: 500;
 }
 
@@ -734,7 +733,7 @@ FAQ PAGE TABLET
   /* HERO DESKTOP */
   h1 {
     font-size: 3.75em;
-    /*line-height: 1em;*/
+    line-height: 1em;
   }
 
   h2 {
