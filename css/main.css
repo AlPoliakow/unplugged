@@ -348,12 +348,17 @@ aside .content-wrapper .form button {
 
 .mission h2 {
   line-height: 1em;
+  margin: 0;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
   background: #2a423a;
+}
+
+.contact-section h4 {
+  margin-left: 0;
 }
 
 .contact-content p {
@@ -372,7 +377,7 @@ aside .content-wrapper .form button {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  margin: 50px 0 0 0;
+  margin: 50px 0 50px 0;
 }
 
 .faq h2 {
@@ -387,6 +392,7 @@ aside .content-wrapper .form button {
 
 .faq-content h4 {
   line-height: 1.5em;
+  margin-left: 0;
 }
 
 /* ==========================================================================
@@ -546,6 +552,10 @@ input[type=button] {
   }
 
   /*--HERO-AREA TABLET--*/
+  .hero-area .content-wrapper {
+    height: 600px;
+  }
+
   h1 {
     font-size: 3em;
     line-height: 3em;
@@ -566,9 +576,9 @@ input[type=button] {
     margin: 0;
   }
 
-  /*aside h3 {
+  aside h3 {
     line-height: 1em;
-  }*/
+  }
 
 
   /*--FEATURES TABLET--*/
@@ -595,14 +605,15 @@ input[type=button] {
 
   .reviews h2 {
     line-height: 1em;
-    /*padding:0;*/
+    padding:0;
+    width: 80%;
   }
 
-  /*.reviews h3 {
+  .reviews h3 {
     line-height: 1em;
     padding: 0;
     width: 100%;
-  }*/
+  }
 
   .reviews article div {
     width: 49%;
@@ -624,14 +635,11 @@ input[type=button] {
   }
 
   footer .contact {
-    margin-bottom:
-      /*100px*/
-      0;
+    margin-bottom:0;
   }
 
-
-
   footer .copyright {
+    margin-top:100px;
     width: 100%;
   }
 
@@ -657,10 +665,10 @@ ABOUT PAGE TABLET
     width: 80%;
   }
 
-  /*.contact-section h2 {
+  .contact-section h2 {
     line-height: 1em;
     margin:0;
-  }*/
+  }
 
   .contact-content {
     display: flex;
@@ -679,12 +687,15 @@ FAQ PAGE TABLET
     flex-basis: 45%;
   }
 
-  /*.faq-content div {
-    margin: 0;
-  }*/
+  
 
   .faq h2 {
     width: 100%;
+    margin-bottom: 0;
+  }
+
+  .faq h4 {
+    margin-top: 40px;
   }
 
   .faq h4,
