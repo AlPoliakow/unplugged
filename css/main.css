@@ -143,6 +143,14 @@ address {
   font-style: normal;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin:0;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -235,7 +243,10 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  height: 500px;
+  min-height: 500px;
+  background: url('../img/unplugged-retreat.jpg') #333 no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-area h1 {
@@ -282,6 +293,9 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat-features.jpg') #333 no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .features h2 {
@@ -317,6 +331,11 @@ input[type=button] {
   background: #2a423a;
 }
 
+.reviews article {
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 1;
@@ -347,6 +366,8 @@ input[type=button] {
 .contact-content p {
   margin: 0;
 }
+
+/*---MAP MOBILE---*/
 
 /*==========================================================================
 -------FAQ PAGE MOBILE------
@@ -510,8 +531,8 @@ input[type=button] {
 ============================================================================*/
 
   /*---HERO TABLET---*/
-  .hero-area .content-wrapper {
-    height: 600px;
+  .hero-area {
+    min-height: 600px;
   }
 
   .hero-area h1 {
@@ -551,15 +572,17 @@ input[type=button] {
   }
 
   /*--REVIEWS TABLET--*/
-  .reviews article {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .reviews h2 {
     width: 85%;
   }
+  
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
