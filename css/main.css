@@ -148,7 +148,7 @@ img {
 }
 
 figure {
-  margin:0;
+  margin: 0;
 }
 
 .content-wrapper {
@@ -354,6 +354,23 @@ input[type=button] {
   display: flex;
   justify-content: center;
   background: #527158;
+}
+
+/*---MAP MOBILE---*/
+.map figure{
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-bottom: 125%;
+  overflow: hidden;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*---CONTACT MOBILE---*/
@@ -575,7 +592,7 @@ input[type=button] {
   .reviews h2 {
     width: 85%;
   }
-  
+
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -637,10 +654,6 @@ input[type=button] {
     width: 45%;
   }
 
-  /*---MAP TABLET---*/
-  .map {
-    height: 350px;
-  }
 
   /*---CONTACT TABLET---*/
   .contact-section .content-wrapper h2 {
@@ -747,18 +760,13 @@ HOMEPAGE DESKTOP
     width: 42%;
   }
 
-/*===============================================================================
+  /*===============================================================================
 -------ABOUT PAGE DESKTOP------
 ================================================================================*/
   /*---MISSION DESKTOP---*/
   .mission h2 {
     width: 95%;
     font-size: 3em;
-  }
-
-  /*---MAP DESKTOP---*/
-  .map {
-    height: 450px;
   }
 
   /*---CONTACT DESTOP---*/
@@ -771,10 +779,10 @@ HOMEPAGE DESKTOP
     font-size: 1.875em;
   }
 
-/*===============================================================================
+  /*===============================================================================
 -------FAQ PAGE DESKTOP------
 ================================================================================*/
-.faq h2 {
+  .faq h2 {
     width: 100%;
     font-size: 3em;
   }
