@@ -170,7 +170,10 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
 
+header figure {
+  width:60%;
 }
 
 .header-divider {
@@ -637,6 +640,10 @@ input[type=button] {
     margin-bottom: 0;
   }
 
+  footer .social {
+    width: 30%;
+  }
+
   footer h4 {
     font-size: 1.5em;
     margin-bottom: 40px;
@@ -650,6 +657,10 @@ input[type=button] {
     gap: 16%;
   }
 
+  footer .social-icons p {
+  font-size: 2em;
+  }
+
   footer .footer-content {
     margin-bottom: 100px;
   }
@@ -657,6 +668,9 @@ input[type=button] {
   footer .copyright {
     width: 100%;
   }
+
+  
+
 
   /*==========================================================================
 ------ABOUT PAGE TABLET------
