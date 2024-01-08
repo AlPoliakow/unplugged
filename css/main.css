@@ -173,7 +173,7 @@ header .content-wrapper {
 }
 
 header figure {
-  width:60%;
+  width: 60%;
 }
 
 .header-divider {
@@ -194,6 +194,7 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  margin: 0;
 }
 
 header nav ul li {
@@ -215,11 +216,18 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
+  margin-bottom: 0;
 }
 
 footer .contact,
 footer .social {
   margin-bottom: 50px;
+}
+
+footer .social h4,
+footer .contact h4 {
+  margin: 0;
+  padding: 20px 0;
 }
 
 footer .social-icons {
@@ -236,7 +244,7 @@ footer .social-icons p {
 }
 
 footer .social-icons i {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   background: #527158;
@@ -246,7 +254,7 @@ footer .social-icons i {
 }
 
 footer .copyright {
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 /*==========================================================================
@@ -276,8 +284,12 @@ aside {
   background: #527158;
 }
 
-aside .form {
-  margin-top: 30px;
+aside p {
+  margin: 0;
+}
+
+aside .form-description {
+  margin-bottom: 30px;
 }
 
 input[type=text] {
@@ -286,6 +298,7 @@ input[type=text] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  margin-bottom: 20px;
 }
 
 input[type=button] {
@@ -312,7 +325,8 @@ input[type=button] {
 }
 
 .features h2 {
-  margin-bottom: 60px;
+  margin: 0;
+  padding-bottom: 60px;
 }
 
 .features article {
@@ -333,8 +347,8 @@ input[type=button] {
 }
 
 .features i {
-	font-size: 3.75em;
-  margin-bottom: 40px;
+  font-size: 3.75em;
+  padding-bottom: 40px;
 }
 
 
@@ -351,13 +365,17 @@ input[type=button] {
 }
 
 .reviews h2 {
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
   line-height: 1;
 }
 
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
+}
+
+.reviews p {
+  margin: 0;
 }
 
 /*==========================================================================
@@ -368,6 +386,10 @@ input[type=button] {
   display: flex;
   justify-content: center;
   background: #527158;
+}
+
+.mission h2 {
+  margin: 0;
 }
 
 /*---MAP MOBILE---*/
@@ -394,6 +416,10 @@ input[type=button] {
   background: #2a423a;
 }
 
+.contact-section h2 {
+  margin: 0;
+}
+
 .contact-content p {
   margin: 0;
 }
@@ -418,7 +444,7 @@ input[type=button] {
 }
 
 .faq h2 {
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
   line-height: 1em;
 }
 
@@ -557,6 +583,61 @@ input[type=button] {
     display: none;
   }
 
+  /*--FOOTER TABLET--*/
+  footer .content-wrapper {
+    width: 65%;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer .contact,
+  footer .social {
+    margin: 0;
+  }
+
+  footer .contact h4,
+  footer .social h4 {
+    padding: 0 0 40px 0;
+  }
+
+  footer .social {
+    width: 30%;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+  }
+
+  footer p {
+    line-height: 1.285em;
+  }
+
+  footer .social-icons {
+    gap: 16%;
+  }
+
+  footer .social-icons p {
+    font-size: 1.5em;
+  }
+
+  footer .social-icons i {
+    width: 1.75em;
+    height: 1.75em;
+  }
+  
+  footer .footer-content {
+    margin-bottom: 100px;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
   /*==========================================================================
 ------HOMEPAGE TABLET------
 ============================================================================*/
@@ -586,9 +667,13 @@ input[type=button] {
     margin: 0;
   }
 
+  input[type=text] {
+    margin-bottom: 0;
+  }
+
   /*--FEATURES TABLET--*/
   .features h2 {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   .features article {
@@ -600,6 +685,10 @@ input[type=button] {
 
   .features .features-item-description {
     width: 62%;
+  }
+
+  .features i {
+    padding-bottom: 30px;
   }
 
   /*--REVIEWS TABLET--*/
@@ -619,58 +708,9 @@ input[type=button] {
   }
 
   .reviews h3 {
-    margin: 0;
+    margin-top:0;
     width: 75%;
   }
-
-  /*--FOOTER TABLET--*/
-  footer .content-wrapper {
-    width: 65%;
-  }
-
-  footer .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  footer .contact,
-  footer .social {
-    margin-bottom: 0;
-  }
-
-  footer .social {
-    width: 30%;
-  }
-
-  footer h4 {
-    font-size: 1.5em;
-    margin-bottom: 40px;
-  }
-
-  footer p {
-    line-height: 1.285em;
-  }
-
-  footer .social-icons {
-    gap: 16%;
-  }
-
-  footer .social-icons p {
-  font-size: 2em;
-  }
-
-  footer .footer-content {
-    margin-bottom: 100px;
-  }
-
-  footer .copyright {
-    width: 100%;
-  }
-
-  
-
 
   /*==========================================================================
 ------ABOUT PAGE TABLET------
@@ -711,6 +751,24 @@ input[type=button] {
   /*==========================================================================
 ------FAQ PAGE TABLET------
 ============================================================================*/
+  /*--
+  .faq-content-wrapper {
+    display:flex;
+    flex-direciton: column;
+  }
+
+  header,
+  main,
+  footer {
+    display:flex;
+    flex-grow: 1;
+  }
+  --*/
+
+  body {
+    background: #202322;
+  }
+
   .faq .content-wrapper {
     justify-content: space-between;
   }
@@ -789,9 +847,8 @@ HOMEPAGE DESKTOP
   }
 
   /*---REVIEWS DESKTOP---*/
-
   .reviews h2 {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   .reviews article div {
