@@ -629,7 +629,7 @@ input[type=button] {
     width: 1.75em;
     height: 1.75em;
   }
-  
+
   footer .footer-content {
     margin-bottom: 100px;
   }
@@ -751,20 +751,6 @@ input[type=button] {
   /*==========================================================================
 ------FAQ PAGE TABLET------
 ============================================================================*/
-  /*--
-  .faq-content-wrapper {
-    display:flex;
-    flex-direciton: column;
-  }
-
-  header,
-  main,
-  footer {
-    display:flex;
-    flex-grow: 1;
-  }
-  --*/
-
   body {
     background: #202322;
   }
